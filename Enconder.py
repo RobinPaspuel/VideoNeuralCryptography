@@ -183,7 +183,7 @@ routnames.sort()
 
 # In[ ]:
 
-
+jump = int(len(files)/450)
 cjump = 0
 num = 0
 Array_to_encode_text = []
