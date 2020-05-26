@@ -1,5 +1,5 @@
 # VideoNeuralCryptography
-## ConvNet used for encoding messages into videos.
+## ConvNet used for encoding messages within videos.
 ## Author: Robinson Paspuel
 
 Google Colab Notebook available here: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RobinPaspuel/VideoNeuralCryptography/blob/master/NeuralCryptography.ipynb)
