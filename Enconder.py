@@ -168,7 +168,7 @@ for f in os.listdir(pathIn):
   img = cv.imread(routandname)
   img = cv.resize(img,(450,450))
   cv.imwrite(routandname,img)
-
+print("Frames resized Sueccessfully")
 
 # In[ ]:
 
@@ -202,7 +202,7 @@ for i in range(len(Array_to_encode)):
   if cjump>len(files):
     break
 
-
+print("Encoded Message Formatted Successfully")
 # In[ ]:
 
 
@@ -244,7 +244,8 @@ for i in range(len(targets)):
     B = B*255
     resultimg = cv.merge((B,G,R))
     cv.imwrite(resultr[i],resultimg)
-print("success")
+print("*** Message Encoding DONE ***\n")
+print("Starting the video reconstruction")
 
 
 # In[ ]:
@@ -277,4 +278,4 @@ for i in range(len(frame_array)):
     # writing to a image array
     out.write(frame_array[i])
 out.release()
-
+print("**Video Reconstructed Successfully**"
