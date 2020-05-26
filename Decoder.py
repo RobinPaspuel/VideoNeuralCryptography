@@ -146,8 +146,8 @@ model, encoder, decoder = get_model(image_shape, sentence_len, dict_len)
 # In[ ]:
 
 
-input_loc = 'videoEncoded.avi'
-output_loc = '/content/ToDecode/'
+input_loc = '/content/videoEncoded.avi'
+output_loc = '/content/VideoNeuralCryptography/ToDecode'
 video_to_frames(input_loc, output_loc)
 
 
@@ -160,7 +160,7 @@ model.load_weights("best_weights_450.h5")
 # In[ ]:
 
 
-pathInD = '/content/ToDecode/'
+pathInD = '/content/VideoNeuralCryptography/ToDecode'
 let = []
 decoded = []
 for f in os.listdir(pathInD):
