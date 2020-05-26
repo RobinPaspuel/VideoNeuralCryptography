@@ -165,7 +165,7 @@ let = []
 decoded = []
 for f in os.listdir(pathInD):
   filename = os.fsdecode(f)
-  routandnameD =  str(str(pathInD)[0:-1] + '/' + str(filename))
+  routandnameD =  str(str(pathInD)[0:] + '/' + str(filename))
   let.append(routandnameD)
   let.sort(key = lambda x: x[5:-4])
   let.sort()
