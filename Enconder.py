@@ -146,15 +146,15 @@ model, encoder, decoder = get_model(image_shape, sentence_len, dict_len)
 # In[ ]:
 
 
-input_loc = 'test2.mp4'
-output_loc = '/content/Frames/'
+input_loc = '/content/test2.mp4'
+output_loc = '/content/VideoNeuralCryptography/Frames/'
 video_to_frames(input_loc, output_loc)
 
 
 # In[ ]:
 
 
-pathIn = '/content/Frames/'
+pathIn = '/content/VideoNeuralCryptography/Frames/'
 
 
 # In[ ]:
@@ -206,7 +206,7 @@ for i in range(len(Array_to_encode)):
 # In[ ]:
 
 
-directoryresult = '/content/EncodedFrames/'
+directoryresult = '/content/VideoNeuralCryptography/EncodedFrames/'
 
 
 # In[ ]:
@@ -250,7 +250,7 @@ print("success")
 # In[ ]:
 
 
-pathInCod= '/content/EncodedFrames/'
+pathInCod= '/content/VideoNeuralCryptography/EncodedFrames/'
 pathOutCod = '/content/videoEncoded.avi'
 fps = 25
 frame_array = []
