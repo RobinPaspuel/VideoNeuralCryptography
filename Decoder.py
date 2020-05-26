@@ -149,7 +149,7 @@ model, encoder, decoder = get_model(image_shape, sentence_len, dict_len)
 input_loc = '/content/videoEncoded.avi'
 output_loc = '/content/VideoNeuralCryptography/ToDecode'
 video_to_frames(input_loc, output_loc)
-
+print("Starting Decode Process")
 
 # In[ ]:
 
@@ -175,8 +175,8 @@ for i in range(len(let)):
   y_sen = decoder.predict(y_img)
   dec_sen = ascii_decode(y_sen)
   decoded.append(dec_sen[0])
-
-
+print("**Decode Process Done!**")
+print("Sorting and saving the message...")
 # In[ ]:
 
 
@@ -202,4 +202,4 @@ finalmessage
 
 with open("test.txt", "w") as text_file:
     print(finalmessage, file=text_file)
-
+print("**Process Done, Message Decoded Successfully**"
