@@ -278,4 +278,4 @@ for i in range(len(frame_array)):
     # writing to a image array
     out.write(frame_array[i])
 out.release()
-print("**Video Reconstructed Successfully**"
+print("**Video Reconstructed Successfully**")
