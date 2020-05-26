@@ -245,7 +245,7 @@ for i in range(len(targets)):
     resultimg = cv.merge((B,G,R))
     cv.imwrite(resultr[i],resultimg)
 print("*** Message Encoding DONE ***\n")
-print("Starting the video reconstruction")
+print("Starting the video reconstruction...")
 
 
 # In[ ]:
